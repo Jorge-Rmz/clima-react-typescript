@@ -97,7 +97,7 @@ export default function useWeather() {
             const {data: weatherResult} = await axios(weatherUrl)
             const result = parse(WeatherSchema, weatherResult)
             if(result) {
-                setWeather(result)
+                setWeather(result) 
             }
 
         } catch (error) {
